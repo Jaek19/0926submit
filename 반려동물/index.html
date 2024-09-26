@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>첫화면</title>
+  </head>
+  <body>
+    <div id="Container">
+      <header>
+        <div id="logoContainer">
+          <a href="#"><img src="images/logo.jpg" alt="로고" /></a>
+        </div>
+      </header>
+      <main>
+        <section id="join">
+          <ul>
+            <li>이메일<input type="email" name="email" id="email" /></li>
+            <li>비밀번호<input type="password" name="pw" id="pw" /></li>
+            <input type="checkbox" id="checkbox" />자동로그인
+            <a href="contents.html"
+              ><li><h1>로그인</h1></li></a
+            >
+            <a href="#">
+              <li><h3>휴대폰 번호로 로그인</h3></li></a
+            >
+            <a href="#"
+              ><li><h3>네이버로 로그인</h3></li></a
+            >
+            <a href="#">
+              <li><h3>구글로 로그인</h3></li></a
+            >
+            <a href="#" id="join-popup" onclick="joinPopup()">
+              <li><h4>회원가입</h4></li></a
+            >
+            <a href="#" onclick="workingPopup()">
+              <li><h5>아이디/비밀번호 찾기</h5></li></a
+            >
+          </ul>
+          <form action="#" id="user-join">
+            이메일<input type="text" id="user-email" />
+            <button type="button" id="email-check">중복확인</button> <br />
+            비밀번호<input type="password" id="user-pw" /> <br />2차확인<input
+              type="password"
+              id="user-pw2"
+            />
+            <br />
+            닉네임<input type="text" id="user-nickname" />
+            <button type="button" id="nickname-check">중복확인</button>
+            <br />
+            <button type="button" id="join-success" onclick="deletePopup()">
+              만들기
+            </button>
+            <button type="button" id="deleteBtn" onclick="deletePopup()">
+              X
+            </button>
+          </form>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

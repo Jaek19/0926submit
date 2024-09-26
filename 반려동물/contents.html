@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>메인화면</title>
+    <link rel="stylesheet" href="contents.css" />
+    <script src="contents.js" defer></script>
+  </head>
+  <body>
+    <div id="Container">
+      <header>
+        <div id="imgContainer">
+          <a href="#"><img src="images/logo.jpg" alt="로고" /></a>
+        </div>
+        <div id="myPageContainer">
+          <div id="myPageImg">
+            <button type="button" id="mypageBtn" onclick="myPageAppear()">
+              <img src="images/mypage.png" alt="마이페이지" />
+            </button>
+            <button type="button" id="bellBtn">
+              <img src="images/bell.png" alt="알림" />
+            </button>
+          </div>
+          <div id="myPageText">
+            <a href="#"><b>내 정보</b></a>
+            <a href="#"><b>내가 작성한 글</b></a>
+            <a href="#"><b>내가 작성한 댓글</b></a>
+            <a href="#"><b>로그아웃</b></a>
+          </div>
+        </div>
+      </header>
+      <main>
+        <ul>
+          <li>
+            <a href="#" id="certification-popup"
+              ><h2>인증하기(의사,사육사)</h2></a
+            >
+          </li>
+          <li>
+            <a href="helpdoctor.html"><h2>도와주세요 의사선생님</h2></a>
+          </li>
+          <li>
+            <a href="#" id="help-breeder"><h2>도와주세요 사육사님</h2></a>
+          </li>
+          <li>
+            <a href="board.html"><h2>자유게시판</h2></a>
+          </li>
+        </ul>
+        <div id="certification-wrapper">
+          <h2>인증하기</h2>
+          <form id="certification-form">
+            <label for="hospital">병원명</label>
+            <div class="input-group">
+              <input
+                type="text"
+                id="hospital"
+                placeholder="병원 이름을 입력해주세요"
+              />
+              <button type="button" id="search-hospital">🔍찾기</button>
+            </div>
+
+            <label for="certificate">자격증 사진</label>
+            <input type="file" id="certificate" accept="image/*" />
+
+            <button type="submit" id="submit" onclick="deleteCertification()">
+              제출하기
+            </button>
+          </form>
+          <button
+            type="button"
+            id="close-certification"
+            onclick="deleteCertification()"
+          >
+            X
+          </button>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

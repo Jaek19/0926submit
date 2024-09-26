@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: '양진체';
+}
+body {
+  background-color: #f5f7fa;
+  color: #333;
+}
+#Container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid red;
+}
+
+header {
+  display: flex;
+}
+
+#imgContainer {
+  max-width: 50%;
+  padding: 10px 20px;
+  height: auto;
+  margin-bottom: 40px;
+}
+/* #mypageBtn {
+  border: none;
+  cursor: pointer;
+}
+
+#bellBtn {
+  cursor: pointer;
+  border: none;
+} */
+
+[alt='로고'] {
+  max-width: 70%;
+  height: auto;
+  clip-path: circle(50%);
+}
+/* [alt='알림'] {
+  padding-left: 40px;
+} */
+
+#myPageContainer {
+  position: relative;
+}
+
+#myPageImg {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#myPageImg button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+#myPageImg img {
+  width: 24px;
+  height: 24px;
+}
+
+#myPageText {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  visibility: hidden;
+}
+
+#myPageText a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+#myPageText a:hover {
+  background-color: #f0f0f0;
+}
+
+#myPageText a:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+#bellBtn {
+  visibility: hidden;
+}
+
+main {
+  text-align: center;
+}
+
+main ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+main li {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+main li:hover {
+  transform: translateY(-5px);
+}
+
+main li a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: #000;
+}
+main li h2 {
+  font-size: 18px;
+  color: #7367f0;
+  transition: color 0.3s ease;
+}
+
+main li h2:hover {
+  color: #623aa2;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#certification-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 300px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 1000;
+}
+
+#certification-wrapper h2 {
+  margin-bottom: 20px;
+  color: var(--blue);
+  text-align: center;
+}
+
+#certification-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+#certification-form input[type='text'],
+#certification-form input[type='file'] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.input-group {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.input-group input {
+  flex-grow: 1;
+  margin-right: 5px;
+}
+
+#search-hospital {
+  padding: 8px 12px;
+  background-color: var(--blue);
+  color: #999;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#search-hospital:hover {
+  background-color: #2d4373;
+}
+
+#submit {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--blue);
+  color: #999;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+#submit:hover {
+  background-color: #2d4373;
+}
+
+#close-certification {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  color: #333;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+#close-certification:hover {
+  color: #f44336;
+}
+@font-face {
+  font-family: '양진체';
+  src: url('https://fastly.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media (max-width: 600px) {
+  #Container {
+    padding: 10px;
+  }
+
+  main li a {
+    padding: 15px;
+  }
+
+  main li h2 {
+    font-size: 16px;
+  }
+}

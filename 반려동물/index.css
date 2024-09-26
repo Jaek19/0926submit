@@ -1,0 +1,161 @@
+:root {
+  --blue: #3b5998;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: '양진체';
+  background-color: #f0f2f5;
+}
+#Container {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+}
+
+#logoContainer {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+[alt='로고'] {
+  max-width: 100%;
+  height: auto;
+}
+#join {
+  text-align: center;
+}
+
+#join ul {
+  list-style: none;
+  padding: 0;
+}
+#join li {
+  margin-bottom: 15px;
+}
+
+#id,
+#pw {
+  padding: 2px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+#checkbox {
+  margin-right: 5px;
+}
+a {
+  text-decoration: none;
+  color: #1877f2;
+}
+h1,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+h1 {
+  font-size: 18px;
+  background-color: var(--blue);
+}
+
+h3 {
+  font-size: 16px;
+  background-color: #4caf50;
+}
+
+h4,
+h5 {
+  font-size: 14px;
+  background-color: transparent;
+  color: var(--blue);
+}
+
+h1:hover,
+h3:hover {
+  opacity: 0.9;
+}
+
+#user-join {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 300px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 1000;
+}
+
+#user-join input[type='text'],
+#user-join input[type='password'] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#user-join button {
+  padding: 8px 12px;
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#user-join button:hover {
+  background-color: #2d4373;
+}
+
+#email-check,
+#nickname-check {
+  margin-top: 5px;
+}
+
+#join-success {
+  width: 100%;
+  margin-top: 10px;
+}
+
+#deleteBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  color: #333;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+#deleteBtn:hover {
+  color: #f44336;
+}
+@font-face {
+  font-family: '양진체';
+  src: url('https://fastly.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
