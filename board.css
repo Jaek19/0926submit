@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: '양진체';
+}
+
+body {
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+#Container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#logoContainer {
+  max-width: 50%;
+  padding: 10px 20px;
+}
+
+#logoContainer img {
+  max-width: 70%;
+  height: auto;
+  clip-path: circle(50%);
+}
+
+#myPageContainer {
+  display: flex;
+  align-items: center;
+}
+
+#myPageImg button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#myPageImg img {
+  width: 30px;
+  height: 30px;
+}
+
+#myPageText {
+  display: none;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+#myPageText a {
+  padding-top: 5px;
+  color: darkgrey;
+  text-decoration: none;
+}
+
+h1 {
+  margin-right: 20%;
+  color: #7367f0;
+}
+
+#searchContainer {
+  margin-bottom: 20px;
+  text-align: center;
+}
+#backButtonContainer {
+  margin: 10px 9%;
+}
+
+#backButton {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #ff7f50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+#backButton:hover {
+  background-color: #ff6347;
+}
+
+#tableContainer {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+#board {
+  width: 100%;
+  border-collapse: collapse;
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+}
+
+#board th,
+#board td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+#board th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+#footContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#footContainer a,
+#footContainer button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #333;
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+#footContainer button {
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: '양진체';
+  src: url('https://fastly.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media (max-width: 700px) {
+  #Container {
+    padding: 10px;
+  }
+
+  header {
+    h1 {
+      font-size: 1.2rem;
+    }
+  }
+
+  #board th,
+  #board td {
+    padding: 8px;
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #Container {
+    padding: 5px;
+  }
+
+  #logoContainer {
+    display: none;
+  }
+
+  header {
+    justify-content: center;
+    padding: 5px;
+    h1 {
+      font-size: 1rem;
+      flex: 1;
+      text-align: center;
+    }
+    #myPageContainer {
+      flex: 0.3;
+    }
+  }
+  #board th,
+  #board td {
+    padding: 3px;
+    font-size: 0.6rem;
+  }
+}

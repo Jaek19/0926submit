@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자유게시판</title>
+    <link rel="stylesheet" href="board.css" />
+    <script src="board.js" defer></script>
+  </head>
+  <body>
+    <div id="Container">
+      <header>
+        <div id="logoContainer">
+          <img src="images/logo.jpg" alt="로고" />
+        </div>
+        <h1>자유게시판</h1>
+        <div id="myPageContainer">
+          <div id="myPageImg">
+            <button type="button" id="mypageBtn" onclick="myPageAppear()">
+              <img src="images/mypage.png" alt="마이페이지" />
+            </button>
+            <button type="button" id="bellBtn">
+              <img src="images/bell.png" alt="알림" />
+            </button>
+          </div>
+          <div id="myPageText">
+            <a href="#"><b>내 정보</b></a>
+            <a href="#"><b>내가 작성한 글</b></a>
+            <a href="#"><b>내가 작성한 댓글</b></a>
+            <a href="#"><b>로그아웃</b></a>
+          </div>
+        </div>
+      </header>
+      <div id="backButtonContainer">
+        <a href="contents.html" id="backButton">뒤로가기</a>
+      </div>
+      <main>
+        <div id="searchContainer">
+          <input type="radio" id="n1" name="searchType" /><label for="n1"
+            >제목</label
+          >
+          <input type="radio" id="n2" name="searchType" /><label for="n2"
+            >제목+내용</label
+          >
+          <input type="radio" id="n3" name="searchType" /><label for="n3"
+            >글쓴이</label
+          >
+          <input type="text" id="searchInput" />
+          <button type="button" id="search">검색하기</button>
+        </div>
+        <div id="tableContainer">
+          <table id="board">
+            <thead>
+              <tr>
+                <th>추천</th>
+                <th>제목</th>
+                <th>글쓴이</th>
+                <th>날짜</th>
+                <th>조회수</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="choo"></td>
+                <td class="title">
+                  <a class="board-title" href="#">공지사항</a>
+                </td>
+                <td class="name">운영자</td>
+                <td class="date">2024-07-01</td>
+                <td class="viewCount">1240</td>
+              </tr>
+              <tr>
+                <td class="choo">4</td>
+                <td class="title">
+                  <a class="board-title" href="#"> 애견카페 추천합니다~</a>
+                </td>
+                <td class="name">도비파파</td>
+                <td class="date">2024-07-16</td>
+                <td class="viewCount">13</td>
+              </tr>
+              <tr>
+                <td class="choo">6</td>
+                <td class="title">
+                  <a class="board-title" href="#"> 고양이 간식추천!!</a>
+                </td>
+                <td class="name">모모맘</td>
+                <td class="date">2024-07-15</td>
+                <td class="viewCount">19</td>
+              </tr>
+              <tr>
+                <td class="choo">13</td>
+                <td class="title">
+                  <a class="board-title" href="#"> 강아지 사료 질문있어요~ </a>
+                </td>
+                <td class="name">보바</td>
+                <td class="date">2024-07-14</td>
+                <td class="viewCount">12</td>
+              </tr>
+              <tr>
+                <td class="choo">8</td>
+                <td class="title">
+                  <a class="board-title" href="#"> 배고파요 </a>
+                </td>
+                <td class="name">나나</td>
+                <td class="date">2042-07-14</td>
+                <td class="viewCount">3</td>
+              </tr>
+              <tr>
+                <td class="choo">12</td>
+                <td class="title">
+                  <a class="board-title" href="#">산책로 어떤가요? </a>
+                </td>
+                <td class="name">샤샤집사</td>
+                <td class="date">2024-07-13</td>
+                <td class="viewCount">6</td>
+              </tr>
+              <tr>
+                <td class="choo">5</td>
+                <td class="title">
+                  <a class="board-title" href="#"
+                    >고양이만 3마리 키우시는 분?</a
+                  >
+                </td>
+                <td class="name">roro</td>
+                <td class="date">2024-07-13</td>
+                <td class="viewCount">23</td>
+              </tr>
+              <tr>
+                <td class="choo">8</td>
+                <td class="title">
+                  <a class="board-title" href="#">강아지 품종 추천해주세요!!</a>
+                </td>
+                <td class="name">구구</td>
+                <td class="date">2024-07-12</td>
+                <td class="viewCount">15</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+      <footer>
+        <div id="footContainer">
+          <a href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">6</a>
+          <a href="#">7</a>
+          <a href="#">...</a>
+          <button type="button">인기글</button>
+          <button type="button">글쓰기</button>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
